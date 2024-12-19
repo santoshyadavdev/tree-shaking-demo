@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './button/button.component';
-import { TableComponent } from './table/table.component';
+import { ButtonModule } from './button/button.module';
+import { TableModule } from './table/table.module';
 
 @NgModule({
-  imports: [CommonModule],
-  declarations: [ButtonComponent, TableComponent],
-  exports: [ButtonComponent, TableComponent],
+  imports: [CommonModule,TableModule, ButtonModule ],
+  declarations: [],
+  exports: [TableModule, ButtonModule],
 })
 export class GodModuleLibModule {}
